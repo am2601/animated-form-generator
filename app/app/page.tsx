@@ -16,12 +16,20 @@ const templates = [
       imageSrc: '/arctic.png',
       imageAlt: 'Login form with penguin',
     },
+    {
+      name: 'Yeti',
+      href: '/yeti',
+      description: 'Animated yeti.',
+      imageSrc: '/yeti.png',
+      imageAlt: 'Login form with yeti',
+    },
   ]
 
   export default function Page() {
     return (
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8">
+        <h1 className="text-3xl font-bold text-center">Choose a template</h1>
+        <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8 mt-16">
           {templates.map((template) => (
             <div
               key={template.name}

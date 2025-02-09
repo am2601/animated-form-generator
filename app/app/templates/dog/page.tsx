@@ -604,6 +604,8 @@ showPasswordButton.addEventListener("click", (event) => {
         >
           Copy All
         </button>
+        <div className="mt-10 p-2 text-lg text-gray-500">Original source: <a href="https://github.com/Muhthoriqas/Avatar-Animation-Login-Page" target="_blank" className="text-blue-500 underline">Github</a></div>
+
       </div>
     </div>
   );
