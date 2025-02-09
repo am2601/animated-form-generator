@@ -3,11 +3,18 @@ import Link from "next/link";
 
 const templates = [
     {
+      name: 'Dog',
+      href: '/dog',
+      description: 'Cute animated dog interacting with login form',
+      imageSrc: '/dog.png',
+      imageAlt: 'Login form with cute dog',
+    },
+    {
       name: 'Arctic Theme',
       href: '/arctic',
       description: 'Arctic theme with animated penguin',
       imageSrc: '/arctic.png',
-      imageAlt: 'Login form with penguin.',
+      imageAlt: 'Login form with penguin',
     },
   ]
 
