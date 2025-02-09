@@ -16,6 +16,13 @@ const templates = [
       imageSrc: '/arctic.png',
       imageAlt: 'Login form with penguin',
     },
+    {
+      name: 'Yeti',
+      href: '/yeti',
+      description: 'Animated yeti.',
+      imageSrc: '/yeti.png',
+      imageAlt: 'Login form with yeti',
+    },
   ]
 
   export default function Page() {

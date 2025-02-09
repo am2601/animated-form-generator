@@ -21,12 +21,31 @@ export default function Page() {
 
   return (
     <div className="flex h-screen p-6 pt-16">
-      <div className="p-6 bg-white rounded-lg shadow-md w-full">
-        <div
-          dangerouslySetInnerHTML={{
-            __html: `<style>${cssCode}</style>${htmlCode}<script>${jsCode}</script>`,
-          }}
-        />
+      <div className="bg-white rounded-lg shadow-md w-full">
+      <iframe
+        className="w-full h-full border-none"
+        sandbox="allow-scripts allow-same-origin"
+        ref={(iframe) => {
+          if (iframe) {
+            const doc = iframe.contentDocument;
+            if (doc) {
+              doc.open();
+              doc.write(`
+                <html>
+                  <head>
+                    <style>${cssCode}</style>
+                  </head>
+                  <body>
+                    ${htmlCode}
+                    <script>${jsCode}</script>
+                  </body>
+                </html>
+              `);
+              doc.close();
+            }
+          }
+        }}
+      />
       </div>
 
       <div className="w-80 ml-4 bg-white shadow-md rounded-lg p-6">
