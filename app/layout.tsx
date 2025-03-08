@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Animated Form Generator",
-  description: "Generate source code for login forms with animated characters.",
+  description: "Generate code for animated login forms.",
 };
 
 export default function RootLayout({
